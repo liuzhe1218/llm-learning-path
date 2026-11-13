@@ -61,12 +61,14 @@ plugins:
             "Part 1 · Pre-training & Architecture": "第一部分 · 预训练与模型架构"
             "Part 2 · Post-training & Reasoning": "第二部分 · 后训练与推理能力"
             "Part 3 · Inference Systems & Infra": "第三部分 · 推理系统与基础设施"
+            "Part 4 · LLMs in Ads & Recommendation": "第四部分 · LLM 与广告推荐系统"
 
 nav:
   - Home: index.md
   - "Part 1 · Pre-training & Architecture": part1-pretraining.md
   - "Part 2 · Post-training & Reasoning": part2-posttraining.md
   - "Part 3 · Inference Systems & Infra": part3-inference.md
+  - "Part 4 · LLMs in Ads & Recommendation": part4-recsys-ads.md
 
 markdown_extensions:
   - admonition

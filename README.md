@@ -11,6 +11,7 @@ A curated, bilingual (English / 中文) learning path for large language models 
 | 1 | [Pre-training & Model Architecture](docs/part1-pretraining.md) | [预训练与模型架构](docs/part1-pretraining.zh.md) |
 | 2 | [Post-training, Alignment & Reasoning](docs/part2-posttraining.md) | [后训练、对齐与推理能力](docs/part2-posttraining.zh.md) |
 | 3 | [Inference Systems & Infrastructure](docs/part3-inference.md) | [推理系统与基础设施](docs/part3-inference.zh.md) |
+| 4 | [LLMs & Generative Modeling in Ads and Recommendation](docs/part4-recsys-ads.md) | [LLM 与生成式建模在广告推荐中的应用](docs/part4-recsys-ads.zh.md) |
 
 ## Run locally / 本地预览
 

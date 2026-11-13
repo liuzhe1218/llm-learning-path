@@ -12,13 +12,14 @@ A curated, opinionated path through how modern large language models are **built
 | [**Part 1 · Pre-training & Architecture**](part1-pretraining.md) | Transformer internals, tokenization, scaling laws, data, MoE, long context, efficient attention, distributed training | Explain every block of a 2025–2026 frontier model (e.g. DeepSeek-V3, Qwen3, Llama 4, gpt-oss) and why it is designed that way |
 | [**Part 2 · Post-training & Reasoning**](part2-posttraining.md) | SFT, RLHF, DPO & friends, RL with verifiable rewards (GRPO/DAPO/GSPO), reasoning models, test-time scaling, agentic/tool-use training, PEFT | Design a post-training recipe that turns a base model into a chat / reasoning / agent model |
 | [**Part 3 · Inference Systems & Infra**](part3-inference.md) | KV cache, PagedAttention, continuous batching, prefix caching, speculative decoding, quantization, prefill/decode disaggregation, MoE serving | Reason about latency/throughput/cost of serving and pick the right engine and optimizations |
+| [**Part 4 · LLMs in Ads & Recommendation**](part4-recsys-ads.md) | Industrial recsys/ads cascades, CTR models, scaling laws for recommenders (HSTU, Wukong, RankMixer), semantic IDs & generative retrieval, end-to-end generative recommenders (OneRec), LLMs as feature providers / user models, generative bidding | Explain how LLM-era ideas are rebuilding ranking and recommendation, and design an LLM-augmented or generative recommender |
 
 ## Suggested order
 
 ```text
-Prerequisites ──► Part 1 (2–4 weeks) ──► Part 2 (2–3 weeks) ──► Part 3 (2–3 weeks)
-                       │                         │                       │
-                  build nanoGPT            fine-tune + GRPO          serve with vLLM/SGLang
+Prerequisites ──► Part 1 (2–4 weeks) ──► Part 2 (2–3 weeks) ──► Part 3 (2–3 weeks) ──► Part 4 (2–3 weeks)
+                       │                         │                       │                        │
+                  build nanoGPT            fine-tune + GRPO          serve with vLLM/SGLang    semantic-ID generative recommender
 ```
 
 - **Prerequisites:** linear algebra, probability, PyTorch basics, backprop. Good refreshers: Andrej Karpathy's [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) and the free [Dive into Deep Learning](https://d2l.ai/) book.

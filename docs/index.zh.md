@@ -12,13 +12,14 @@
 | [**第 1 部分 · 预训练与架构**](part1-pretraining.md) | Transformer 内部结构、分词、scaling law（缩放定律）、数据、MoE、长上下文、高效注意力、分布式训练 | 讲清楚 2025–2026 年前沿模型（如 DeepSeek-V3、Qwen3、Llama 4、gpt-oss）的每个模块，以及为什么要这样设计 |
 | [**第 2 部分 · 后训练与推理**](part2-posttraining.md) | SFT、RLHF、DPO 及其变体、基于可验证奖励的 RL（GRPO/DAPO/GSPO）、推理模型、test-time scaling、Agent/工具调用训练、PEFT | 设计一套后训练方案，把基座模型变成对话 / 推理 / Agent 模型 |
 | [**第 3 部分 · 推理系统与基础设施**](part3-inference.md) | KV cache、PagedAttention、continuous batching、前缀缓存、投机解码、量化、prefill/decode 分离、MoE 推理服务 | 分析推理服务的延迟 / 吞吐 / 成本，并选择合适的引擎和优化手段 |
+| [**第 4 部分 · LLM 与广告推荐系统**](part4-recsys-ads.md) | 工业界推荐/广告级联架构、CTR 模型、推荐系统的 scaling law（HSTU、Wukong、RankMixer）、语义 ID 与生成式召回、端到端生成式推荐（OneRec）、LLM 作为特征提供者 / 用户模型、生成式出价 | 讲清 LLM 时代的思想如何重塑排序与推荐，并能设计 LLM 增强或生成式的推荐系统 |
 
 ## 建议的学习顺序
 
 ```text
-Prerequisites ──► Part 1 (2–4 weeks) ──► Part 2 (2–3 weeks) ──► Part 3 (2–3 weeks)
-                       │                         │                       │
-                  build nanoGPT            fine-tune + GRPO          serve with vLLM/SGLang
+Prerequisites ──► Part 1 (2–4 weeks) ──► Part 2 (2–3 weeks) ──► Part 3 (2–3 weeks) ──► Part 4 (2–3 weeks)
+                       │                         │                       │                        │
+                  build nanoGPT            fine-tune + GRPO          serve with vLLM/SGLang    semantic-ID generative recommender
 ```
 
 - **前置知识：** 线性代数、概率论、PyTorch 基础、反向传播。推荐的复习资料：Andrej Karpathy 的 [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) 和免费的 [Dive into Deep Learning（动手学深度学习）](https://d2l.ai/)。
