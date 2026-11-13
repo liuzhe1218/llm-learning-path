@@ -1,0 +1,97 @@
+site_name: LLM Learning Path
+site_description: A curated, bilingual (English / 中文) learning path for LLM pre-training, post-training, and inference systems — with paper links and summaries.
+# Update these two lines if you fork / rename the repo
+site_url: https://liuzhe1218.github.io/llm-learning-path/
+repo_url: https://github.com/liuzhe1218/llm-learning-path
+repo_name: llm-learning-path
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: zh
+          name: 中文
+          build: true
+          site_name: LLM 学习路线
+          nav_translations:
+            Home: 首页
+            "Part 1 · Pre-training & Architecture": "第一部分 · 预训练与模型架构"
+            "Part 2 · Post-training & Reasoning": "第二部分 · 后训练与推理能力"
+            "Part 3 · Inference Systems & Infra": "第三部分 · 推理系统与基础设施"
+
+nav:
+  - Home: index.md
+  - "Part 1 · Pre-training & Architecture": part1-pretraining.md
+  - "Part 2 · Post-training & Reasoning": part2-posttraining.md
+  - "Part 3 · Inference Systems & Infra": part3-inference.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css

@@ -1,0 +1,9 @@
+/* Paper cards: tighter tables, readable on mobile */
+.md-typeset table:not([class]) { font-size: 0.72rem; }
+.md-typeset table:not([class]) td { vertical-align: top; }
+.md-typeset .tag {
+  display: inline-block; padding: 0 .4em; border-radius: .2em;
+  font-size: .62rem; font-weight: 600; margin-right: .3em;
+  background: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color);
+}
