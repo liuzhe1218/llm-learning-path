@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {#- Hypothesis annotation layer: select text → Annotate / Highlight. Sidebar stays closed until used. -#}
+  <script type="application/json" class="js-hypothesis-config">
+    {"openSidebar": false, "showHighlights": "always", "theme": "classic"}
+  </script>
+  <script src="https://hypothes.is/embed.js" async></script>
+{% endblock %}

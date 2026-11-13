@@ -5,6 +5,9 @@ A curated, opinionated path through how modern large language models are **built
 !!! tip "Language / 语言"
     Use the language switcher (🌐 icon in the header) to toggle between **English** and **中文**. Every page exists in both languages.
 
+!!! note "Highlight & ask questions"
+    Select any text on any page and choose **Annotate** (leave a note or question) or **Highlight**. Annotations are powered by [Hypothesis](https://web.hypothes.is/): create a free account once, then your highlights stay anchored to the sentence and come back on every visit and device. Open the side panel with the arrow at the top-right edge of the page to see all notes. Post to **Only Me** for private study notes, or **Public** to share a question with other readers.
+
 ## How the path is organized
 
 | Part | Focus | You will be able to… |
