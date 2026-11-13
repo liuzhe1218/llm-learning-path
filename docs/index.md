@@ -9,10 +9,10 @@ A curated, opinionated path through how modern large language models are **built
 
 | Part | Focus | You will be able to… |
 |---|---|---|
-| [**Part 1 · Pre-training & Architecture**](part1-pretraining.md) | Transformer internals, tokenization, scaling laws, data, MoE, long context, efficient attention, distributed training | Explain every block of a 2025–2026 frontier model (e.g. DeepSeek-V3, Qwen3, Llama 4, gpt-oss) and why it is designed that way |
-| [**Part 2 · Post-training & Reasoning**](part2-posttraining.md) | SFT, RLHF, DPO & friends, RL with verifiable rewards (GRPO/DAPO/GSPO), reasoning models, test-time scaling, agentic/tool-use training, PEFT | Design a post-training recipe that turns a base model into a chat / reasoning / agent model |
-| [**Part 3 · Inference Systems & Infra**](part3-inference.md) | KV cache, PagedAttention, continuous batching, prefix caching, speculative decoding, quantization, prefill/decode disaggregation, MoE serving | Reason about latency/throughput/cost of serving and pick the right engine and optimizations |
-| [**Part 4 · LLMs in Ads & Recommendation**](part4-recsys-ads.md) | Industrial recsys/ads cascades, CTR models, scaling laws for recommenders (HSTU, Wukong, RankMixer), semantic IDs & generative retrieval, end-to-end generative recommenders (OneRec), LLMs as feature providers / user models, generative bidding | Explain how LLM-era ideas are rebuilding ranking and recommendation, and design an LLM-augmented or generative recommender |
+| [**Part 1 · Pre-training & Architecture**](part1/index.md) | Transformer internals, tokenization, scaling laws, data, MoE, long context, efficient attention, distributed training | Explain every block of a 2025–2026 frontier model (e.g. DeepSeek-V3, Qwen3, Llama 4, gpt-oss) and why it is designed that way |
+| [**Part 2 · Post-training & Reasoning**](part2/index.md) | SFT, RLHF, DPO & friends, RL with verifiable rewards (GRPO/DAPO/GSPO), reasoning models, test-time scaling, agentic/tool-use training, PEFT | Design a post-training recipe that turns a base model into a chat / reasoning / agent model |
+| [**Part 3 · Inference Systems & Infra**](part3/index.md) | KV cache, PagedAttention, continuous batching, prefix caching, speculative decoding, quantization, prefill/decode disaggregation, MoE serving | Reason about latency/throughput/cost of serving and pick the right engine and optimizations |
+| [**Part 4 · LLMs in Ads & Recommendation**](part4/index.md) | Industrial recsys/ads cascades, CTR models, scaling laws for recommenders (HSTU, Wukong, RankMixer), semantic IDs & generative retrieval, end-to-end generative recommenders (OneRec), LLMs as feature providers / user models, generative bidding | Explain how LLM-era ideas are rebuilding ranking and recommendation, and design an LLM-augmented or generative recommender |
 
 ## Suggested order
 
@@ -23,7 +23,7 @@ Prerequisites ──► Part 1 (2–4 weeks) ──► Part 2 (2–3 weeks) ─�
 ```
 
 - **Prerequisites:** linear algebra, probability, PyTorch basics, backprop. Good refreshers: Andrej Karpathy's [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) and the free [Dive into Deep Learning](https://d2l.ai/) book.
-- Each part has: **core concepts → must-read papers (with summaries) → 2025–2026 frontier → hands-on projects → self-check questions**.
+- Each part is a **from-scratch course** split into chapters. Every chapter goes **intuition → how it works (math, derived step by step) → runnable code → worked example → what frontier systems do in 2025–2026 → pitfalls → takeaways → self-check questions**, and ends with **Further reading**: the original papers, for when you want to go deeper.
 - Papers are tagged :material-star: **must-read**, :material-book-open-variant: **deep-dive**, or :material-new-box: **frontier**.
 
 ## How to read a paper efficiently

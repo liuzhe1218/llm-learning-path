@@ -12,6 +12,8 @@ theme:
   features:
     - navigation.tracking
     - navigation.sections
+    - navigation.indexes
+    - navigation.prev_next
     - navigation.top
     - navigation.footer
     - toc.follow
@@ -65,10 +67,48 @@ plugins:
 
 nav:
   - Home: index.md
-  - "Part 1 · Pre-training & Architecture": part1-pretraining.md
-  - "Part 2 · Post-training & Reasoning": part2-posttraining.md
-  - "Part 3 · Inference Systems & Infra": part3-inference.md
-  - "Part 4 · LLMs in Ads & Recommendation": part4-recsys-ads.md
+  - "Part 1 · Pre-training & Architecture":
+    - part1/index.md
+    - part1/01-language-modeling.md
+    - part1/02-tokenization.md
+    - part1/03-transformer.md
+    - part1/04-modern-block.md
+    - part1/05-mixture-of-experts.md
+    - part1/06-long-context-and-efficient-attention.md
+    - part1/07-scaling-laws-and-data.md
+    - part1/08-training-at-scale.md
+    - part1/09-frontier-model-case-studies.md
+  - "Part 2 · Post-training & Reasoning":
+    - part2/index.md
+    - part2/01-why-post-training.md
+    - part2/02-supervised-fine-tuning.md
+    - part2/03-rl-foundations-for-llms.md
+    - part2/04-rlhf.md
+    - part2/05-direct-preference-optimization.md
+    - part2/06-reasoning-and-test-time-compute.md
+    - part2/07-rl-with-verifiable-rewards.md
+    - part2/08-distillation-and-efficient-fine-tuning.md
+    - part2/09-agents-tool-use-and-safety.md
+  - "Part 3 · Inference Systems & Infra":
+    - part3/index.md
+    - part3/01-inference-fundamentals.md
+    - part3/02-kv-cache.md
+    - part3/03-batching-and-memory-management.md
+    - part3/04-attention-kernels.md
+    - part3/05-speculative-decoding.md
+    - part3/06-quantization.md
+    - part3/07-distributed-and-disaggregated-serving.md
+    - part3/08-engines-and-production-practice.md
+  - "Part 4 · LLMs in Ads & Recommendation":
+    - part4/index.md
+    - part4/01-recsys-fundamentals.md
+    - part4/02-ranking-and-ctr-models.md
+    - part4/03-sequential-user-modeling.md
+    - part4/04-scaling-recommendation-models.md
+    - part4/05-semantic-ids-and-generative-retrieval.md
+    - part4/06-end-to-end-generative-recommenders.md
+    - part4/07-llms-in-recommendation.md
+    - part4/08-ads-systems.md
 
 markdown_extensions:
   - admonition
